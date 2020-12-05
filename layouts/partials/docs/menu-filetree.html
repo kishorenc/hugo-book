@@ -38,7 +38,7 @@
     </label>
   {{ else if .Page.Content }}
     <a href="{{ .Page.Permalink }}" class="{{ if $current }} active{{ end }}">
-      {{- partial "docs/title" .Page -}}
+      {{- partial "docs/menutitle" .Page -}}
     </a>
   {{ else }}
     <span>{{- partial "docs/title" .Page -}}</span>
